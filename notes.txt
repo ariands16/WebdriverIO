@@ -1,0 +1,16 @@
+how to run test
+all test: npm run wdio or npx wdio run ./wdio.conf.js
+run spesific test: npx wdio run ./wdio.conf.js --spec filename
+    example : npx wdio run .\wdio.conf.js --spec .\test\specs\test1.js
+
+install allure command line tools: npm i -g allure-commandline --save-dev
+generate allure-report folder: allure generate .\allure-results\
+start server and open report: allure open
+
+jenkins :9191
+1. Download Jenkins Generic Java package (.war)
+2. Open up a terminal in the download directory
+3. Run java -jar jenkins.war --httpPort=8080
+4. Browse to http://localhost:9191
+
+file .gitignore untuk list file yang tidak untuk di upload ke git
